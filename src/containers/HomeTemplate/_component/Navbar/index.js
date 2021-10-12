@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-export default function Navbar() {
+export default function NavbarHome() {
     return (
         <nav className="navbar navbar-expand-md bg-dark navbar-dark">
             {/* Brand */}
@@ -14,11 +14,11 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/">Home</NavLink>
+                        <NavLink className="nav-link" to="/booking-movie">MUA VE</NavLink>
                     </li>
 
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/about">About</NavLink>
+                        <NavLink className="nav-link" to="/about">ABOUT</NavLink>
                     </li>
                 </ul>
             </div>

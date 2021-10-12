@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Admin() {
+export default function MuaVe() {
     return (
         <div>
-            Admin
+            Mua Ve
         </div>
     )
 }

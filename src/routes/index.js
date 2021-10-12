@@ -1,14 +1,26 @@
-import Home from '../container/HomeTemplate/Home'
-import About from '../container/HomeTemplate/About'
-import LayoutHome from '../container/HomeTemplate';
 import { lazy } from "react";
+import Home from '../containers/HomeTemplate/Home'
+import MuaVe from '../containers/HomeTemplate/MuaVe'
+import About from '../containers/HomeTemplate/About'
+import HomeTemplate from '../containers/HomeTemplate';
+
+import AdminTemplate from '../containers/AdminTemplate';
+import Dashboard from '../containers/AdminTemplate/Dashboard'
+import QuanLyNguoiDung from '../containers/AdminTemplate/QuanLyNguoiDung'
+import QuanLyPhim from '../containers/AdminTemplate/QuanLyPhim'
+
 
 // HomeTemplate
-const routeHome = [
+const routesHome = [
     {
         exact: true,
         path: '/',
         component: Home,
+    },
+    {
+        exact: false,
+        path: '/booking-movie',
+        component: MuaVe,
     },
     {
         exact: false,
@@ -18,8 +30,8 @@ const routeHome = [
 ]
 
 function renderHomeRoutes() {
-    return routeHome.map((route, index) => {
-        return <LayoutHome key={index} exact={route.exact} path={route.path} component={route.component} />
+    return routesHome.map((route, index) => {
+        return <HomeTemplate key={index} exact={route.exact} path={route.path} component={route.component} />
     })
 }
 
@@ -28,6 +40,27 @@ function renderHomeRoutes() {
 
 
 // AdminTemplate
+const routesAdmin = [
+    {
+        exact: false,
+        path: '/dashboard',
+        component: Dashboard,
+    },
+    {
+        exact: false,
+        path: '/quan-ly-nguoi-dung',
+        component: QuanLyNguoiDung,
+    },
+    {
+        exact: false,
+        path: '/quan-ly-phim',
+        component: QuanLyPhim
+    }
+]
+function renderAdminRoutes() {
+    return routesAdmin.map((route, index) => {
+        return <AdminTemplate key={index} exact={route.exact} path={route.path} component={route.component} />
+    })
+}
 
-
-export { renderHomeRoutes }
+export { renderHomeRoutes, renderAdminRoutes }
