@@ -1,13 +1,17 @@
 import { lazy } from "react";
-import Home from '../containers/HomeTemplate/Home'
+import Home from '../containers/HomeTemplate/Home/'
 import MuaVe from '../containers/HomeTemplate/MuaVe'
 import About from '../containers/HomeTemplate/About'
 import HomeTemplate from '../containers/HomeTemplate';
 
 import AdminTemplate from '../containers/AdminTemplate';
-import Dashboard from '../containers/AdminTemplate/Dashboard'
 import QuanLyNguoiDung from '../containers/AdminTemplate/QuanLyNguoiDung'
-import QuanLyPhim from '../containers/AdminTemplate/QuanLyPhim'
+import QuanLyPhim from '../containers/AdminTemplate/QuanLyPhim/'
+import AuthPage from "../containers/AdminTemplate/AuthPage";
+import ListMovie from "../containers/HomeTemplate/Home/List Movie";
+import AddFilm from "../containers/AdminTemplate/QuanLyPhim/ThemPhim";
+import EditFilm from "../containers/AdminTemplate/QuanLyPhim/EditPhim";
+import ShowTime from "../containers/AdminTemplate/TaoLichChieu";
 
 
 // HomeTemplate
@@ -21,6 +25,11 @@ const routesHome = [
         exact: false,
         path: '/booking-movie',
         component: MuaVe,
+    },
+    {
+        exact: false,
+        path: '/phim',
+        component: ListMovie,
     },
     {
         exact: false,
@@ -43,19 +52,34 @@ function renderHomeRoutes() {
 const routesAdmin = [
     {
         exact: false,
-        path: '/dashboard',
-        component: Dashboard,
+        path: "/admin",
+        component: AuthPage,
     },
     {
         exact: false,
-        path: '/quan-ly-nguoi-dung',
+        path: '/admin/users/',
         component: QuanLyNguoiDung,
     },
     {
         exact: false,
-        path: '/quan-ly-phim',
+        path: '/films',
         component: QuanLyPhim
-    }
+    },
+    {
+        exact: false,
+        path: '/addfilm',
+        component: AddFilm,
+    },
+    {
+        exact: false,
+        path: '/edit/:id',
+        component: EditFilm,
+    },
+    {
+        exact: false,
+        path: '/showtime/:id/:tenphim',
+        component: ShowTime,
+    },
 ]
 function renderAdminRoutes() {
     return routesAdmin.map((route, index) => {
