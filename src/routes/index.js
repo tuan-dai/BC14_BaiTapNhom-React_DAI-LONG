@@ -3,8 +3,7 @@ import Home from '../containers/HomeTemplate/Home/'
 import MuaVe from '../containers/HomeTemplate/MuaVe'
 import About from '../containers/HomeTemplate/About'
 import HomeTemplate from '../containers/HomeTemplate';
-
-import AdminTemplate from '../containers/AdminTemplate';
+import AdminTemplate from "../containers/AdminTemplate";
 import QuanLyNguoiDung from '../containers/AdminTemplate/QuanLyNguoiDung'
 import QuanLyPhim from '../containers/AdminTemplate/QuanLyPhim/'
 import AuthPage from "../containers/AdminTemplate/AuthPage";
@@ -12,6 +11,7 @@ import ListMovie from "../containers/HomeTemplate/Home/List Movie";
 import AddFilm from "../containers/AdminTemplate/QuanLyPhim/ThemPhim";
 import EditFilm from "../containers/AdminTemplate/QuanLyPhim/EditPhim";
 import ShowTime from "../containers/AdminTemplate/TaoLichChieu";
+import Dashboard from "../containers/AdminTemplate/Dashboard";
 
 
 // HomeTemplate
@@ -24,12 +24,12 @@ const routesHome = [
     {
         exact: false,
         path: '/booking-movie',
-        component: MuaVe,
+        component: MuaVe.apply,
     },
     {
         exact: false,
-        path: '/phim',
-        component: ListMovie,
+        path: '/phim-dang-chieu',
+        component: ListMovie
     },
     {
         exact: false,
@@ -57,8 +57,13 @@ const routesAdmin = [
     },
     {
         exact: false,
+        path: "/dashboard",
+        component: Dashboard,
+    },
+    {
+        exact: false,
         path: '/admin/users/',
-        component: QuanLyNguoiDung,
+        component: QuanLyNguoiDung
     },
     {
         exact: false,
@@ -73,12 +78,12 @@ const routesAdmin = [
     {
         exact: false,
         path: '/edit/:id',
-        component: EditFilm,
+        component: EditFilm
     },
     {
         exact: false,
         path: '/showtime/:id/:tenphim',
-        component: ShowTime,
+        component: ShowTime
     },
 ]
 function renderAdminRoutes() {

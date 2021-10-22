@@ -79,7 +79,7 @@ const AddFilm = () => {
     };
 
     return (
-        <div className="container mt-4">
+        <div className="container">
             <Form
                 onSubmitCapture={formik.handleSubmit}
                 labelCol={{

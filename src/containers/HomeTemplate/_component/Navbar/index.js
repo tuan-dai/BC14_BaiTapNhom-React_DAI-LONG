@@ -8,40 +8,7 @@ import './style.css'
 
 export default function NavbarHome() {
     return (
-        // <div id="navbar-wrapper" className="container-fluid bg-light">
-        //     <nav className="navbar container navbar-expand-lg navbar-light">
-        //         <Link className="navbar-brand" to="/">
-        //             <img width='60' src="./img/logo.png" />
-        //         </Link>
-        //         <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-        //             <span className="navbar-toggler-icon"></span>
-        //         </button>
-        //         <div className="collapse navbar-collapse" id="navContent">
-        //             <ul className="navbar-nav">
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link text-dark" to="#">MUA VÉ</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link text-dark" to="/phim">PHIM</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link text-dark" to="#">SỰ KIỆN</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link text-dark" to="/about">ABOUT</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link text-dark" to="/admin">
-        //                         <PersonIcon className="mr-2" />
-        //                         <span>ĐĂNG NHẬP</span>
-        //                     </Link>
-        //                 </li>
-        //             </ul>
-        //         </div>
-        //     </nav>
-        // </div >
-
-        <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light" style={{ boxShadow: '1px 1px 10px rgb(219, 219, 219)' }}>
             <div className="container">
                 <Link to="">
                     <img src='./img/logo.png' alt='' />
@@ -52,10 +19,10 @@ export default function NavbarHome() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto w-100 justify-content-end font-weight-bold">
                         <li className="nav-item">
-                            <Link className="nav-link" href="#">Mua vé<span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="#">Mua vé<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/phim">Phim</Link>
+                            <Link className="nav-link" to="/phim-dang-chieu">Phim</Link>
                         </li><li className="nav-item">
                             <Link className="nav-link" to="#">Sự kiện</Link>
                         </li><li className="nav-item">

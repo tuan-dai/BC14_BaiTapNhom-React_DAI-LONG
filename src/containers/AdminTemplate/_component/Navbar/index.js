@@ -34,9 +34,9 @@ class NavbarAdmin extends Component {
             // Vertical navbar
             <div className="body-admin">
                 <div className="vertical-nav" id="sidebar">
-                    <div className="pt-5 pb-4 px-3 mb-3">
+                    <div className="pt-5 pb-3 px-3 mb-3">
                         <div className="media d-flex align-items-center">
-                            <Link to="/films">
+                            <Link to="/dashboard">
                                 <h4 className="text-light ml-1">Admin Page</h4>
                             </Link>
                         </div>

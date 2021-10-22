@@ -82,7 +82,7 @@ export default function ShowTime(props) {
     }
 
     return (
-        <div className="container mt-4">
+        <div className="container">
             <Form
                 onSubmitCapture={formik.handleSubmit}
                 name="basic"

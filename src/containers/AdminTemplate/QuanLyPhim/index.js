@@ -58,7 +58,7 @@ class QuanLyPhim extends Component {
 
     render() {
         return (
-            <div id="quanlyphim" className=" container mt-4">
+            <div id="quanlyphim" className=" container">
                 <h3>Quản Lý Phim</h3>
                 <Link to='/addfilm'
                     className="btn btn-success mb-4 mt-2"

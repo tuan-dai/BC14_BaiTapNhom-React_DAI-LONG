@@ -19,7 +19,7 @@ export const UserInfo = (user, history) => {
                 //Luu xuong local
                 localStorage.setItem("UserLogin", JSON.stringify(result.data.content))
                 //Redirect to Dashboard
-                history.replace("films")
+                history.replace("dashboard")
 
                 dispatch(actAuthPage_Success(result.data.content))
             })
