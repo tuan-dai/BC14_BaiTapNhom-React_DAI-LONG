@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import Home from '../containers/HomeTemplate/Home/'
-import MuaVe from '../containers/HomeTemplate/MuaVe'
 import About from '../containers/HomeTemplate/About'
 import HomeTemplate from '../containers/HomeTemplate';
 import AdminTemplate from "../containers/AdminTemplate";
@@ -12,6 +11,7 @@ import AddFilm from "../containers/AdminTemplate/QuanLyPhim/ThemPhim";
 import EditFilm from "../containers/AdminTemplate/QuanLyPhim/EditPhim";
 import ShowTime from "../containers/AdminTemplate/TaoLichChieu";
 import Dashboard from "../containers/AdminTemplate/Dashboard";
+import CheckOut from "../containers/HomeTemplate/CheckOut";
 
 
 // HomeTemplate
@@ -23,13 +23,13 @@ const routesHome = [
     },
     {
         exact: false,
-        path: '/booking-movie',
-        component: MuaVe.apply,
+        path: '/phim-dang-chieu',
+        component: ListMovie
     },
     {
         exact: false,
-        path: '/phim-dang-chieu',
-        component: ListMovie
+        path: '/checkout/:id',
+        component: CheckOut,
     },
     {
         exact: false,

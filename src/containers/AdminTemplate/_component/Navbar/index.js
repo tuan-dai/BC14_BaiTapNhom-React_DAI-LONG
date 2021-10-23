@@ -36,7 +36,7 @@ class NavbarAdmin extends Component {
                 <div className="vertical-nav" id="sidebar">
                     <div className="pt-5 pb-3 px-3 mb-3">
                         <div className="media d-flex align-items-center">
-                            <Link to="/dashboard">
+                            <Link to="/dashboard" style={{ textDecoration: 'none' }}>
                                 <h4 className="text-light ml-1">Admin Page</h4>
                             </Link>
                         </div>

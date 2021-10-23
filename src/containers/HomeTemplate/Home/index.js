@@ -13,7 +13,7 @@ export default function Home() {
             <Slider />
             <div className="container">
                 <ListMoviePhanTrang />
-                <Link to="/phim" className="btn btn-outline-warning"
+                <Link to="/phim-dang-chieu" className="btn btn-outline-warning"
                     style={{ marginTop: '-4rem', float: 'right' }}>
                     XEM THÊM
                 </Link>

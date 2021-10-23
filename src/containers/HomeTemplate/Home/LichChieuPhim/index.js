@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { actLayTTLichChieuHeThongRap } from './modules/action';
 import { Tabs, Radio, Space } from 'antd';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import moment from 'moment';
 
 const { TabPane } = Tabs;
@@ -49,7 +49,7 @@ class LichChieuPhim extends Component {
                                                 <p>{cumRap.diaChi}</p>
                                                 <div className="d-flex">
                                                     {phim.lstLichChieuTheoPhim?.map((lichChieu, index) => {
-                                                        return <NavLink to="/" key={index}>
+                                                        return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index}>
                                                             {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
                                                         </NavLink>
                                                     })}
