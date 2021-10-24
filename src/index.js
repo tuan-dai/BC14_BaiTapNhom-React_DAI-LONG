@@ -1,26 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../node_modules/jquery/dist/jquery.min.js'
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
-import '../node_modules/popper.js/dist/popper.min.js'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/jquery/dist/jquery.min.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "../node_modules/popper.js/dist/popper.min.js";
 
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-import { Provider } from 'react-redux'
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import { Provider } from "react-redux";
 
-import rootReducer from './redux';
-
-const store = createStore(rootReducer, applyMiddleware(thunk))
+import rootReducer from "./redux";
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(thunk))
+);
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
