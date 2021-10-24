@@ -3,6 +3,7 @@ import "../css/style.css";
 import "../css/custom.css";
 import "../css/main.css";
 import { NavLink, Link } from "react-router-dom";
+
 import { getListMovie, deleteMovie } from "../../HomeTemplate/Home/List Movie/modules/action";
 
 import AddCircleIcon from "@mui/icons-material/AddCircle";
@@ -31,7 +32,7 @@ class QuanLyPhim extends Component {
                     <td style={{ width: "20rem" }}>{item.tenPhim}</td>
                     <td>{item.moTa}</td>
                     <td>
-                        <NavLink to={`/edit/${item.maPhim}`}
+                        <NavLink to={`/editfilm/${item.maPhim}`}
                             className="btn text-primary">
                             <EditIcon />
                         </NavLink>
@@ -57,6 +58,7 @@ class QuanLyPhim extends Component {
     };
 
     render() {
+
         return (
             <div id="quanlyphim" className=" container">
                 <h3>Quản Lý Phim</h3>

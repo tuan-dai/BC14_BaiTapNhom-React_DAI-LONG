@@ -3,16 +3,21 @@ import Home from '../containers/HomeTemplate/Home/'
 import About from '../containers/HomeTemplate/About'
 import HomeTemplate from '../containers/HomeTemplate';
 import AdminTemplate from "../containers/AdminTemplate";
-import QuanLyNguoiDung from '../containers/AdminTemplate/QuanLyNguoiDung'
-import QuanLyPhim from '../containers/AdminTemplate/QuanLyPhim/'
 import AuthPage from "../containers/AdminTemplate/AuthPage";
+import Dashboard from "../containers/AdminTemplate/Dashboard";
+
+
+import QuanLyNguoiDung from '../containers/AdminTemplate/QuanLyNguoiDung'
+import AddUser from "../containers/AdminTemplate/QuanLyNguoiDung/AddUser";
+import EditUser from "../containers/AdminTemplate/QuanLyNguoiDung/EditUser";
+
+import QuanLyPhim from '../containers/AdminTemplate/QuanLyPhim/'
 import ListMovie from "../containers/HomeTemplate/Home/List Movie";
+import Detail_Movie from "../containers/HomeTemplate/Detail-Movie";
 import AddFilm from "../containers/AdminTemplate/QuanLyPhim/ThemPhim";
 import EditFilm from "../containers/AdminTemplate/QuanLyPhim/EditPhim";
 import ShowTime from "../containers/AdminTemplate/TaoLichChieu";
-import Dashboard from "../containers/AdminTemplate/Dashboard";
 import CheckOut from "../containers/HomeTemplate/CheckOut";
-
 
 // HomeTemplate
 const routesHome = [
@@ -28,9 +33,15 @@ const routesHome = [
     },
     {
         exact: false,
+        path: '/detail-movie/:id',
+        component: Detail_Movie,
+    },
+    {
+        exact: false,
         path: '/checkout/:id',
         component: CheckOut,
     },
+
     {
         exact: false,
         path: '/about',
@@ -62,8 +73,18 @@ const routesAdmin = [
     },
     {
         exact: false,
-        path: '/admin/users/',
+        path: '/users',
         component: QuanLyNguoiDung
+    },
+    {
+        exact: false,
+        path: '/adduser',
+        component: AddUser,
+    },
+    {
+        exact: false,
+        path: '/edituser/:id',
+        component: EditUser,
     },
     {
         exact: false,
@@ -77,7 +98,7 @@ const routesAdmin = [
     },
     {
         exact: false,
-        path: '/edit/:id',
+        path: '/editfilm/:id',
         component: EditFilm
     },
     {

@@ -1,5 +1,4 @@
 import MovieFullList from './MovieFullList'
-import Loader from '../../../../component/Loader'
 import { getListMovie } from './modules/action'
 import '../style.css'
 import React, { Component } from 'react'
@@ -18,7 +17,6 @@ class ListMovie extends Component {
     render() {
         return (
             <div className="container" style={{ marginTop: '3rem' }}>
-                {this.props.loading ? (<Loader />) : ""}
                 <h4 className="text-left">PHIM ĐANG CHIẾU</h4>
                 <div className="phimdangchieu_line"></div>
                 <div className="row my-5">
@@ -38,7 +36,6 @@ const mapDistpatchToProps = (dispatch) => {
 }
 const mapStateToProps = (state) => {
     return {
-        loading: state.ListMovie_Reducer.loading,
         data: state.ListMovie_Reducer.data,
         error: state.ListMovie_Reducer.error,
     }

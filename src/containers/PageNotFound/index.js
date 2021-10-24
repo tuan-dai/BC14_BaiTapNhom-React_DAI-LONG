@@ -1,21 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import NavbarHome from '../HomeTemplate/_component/Navbar'
+import { Link, NavLink } from 'react-router-dom'
 import FooterHome from '../HomeTemplate/_component/Footer'
 import './style.css'
 
 export default function PageNotFound() {
     return (
-        <div>
-            <NavbarHome />
-            <div className="pagenotfound">
-                <div className="container text-center">
-                    <h1 className="text-primary display-2 font-weight-bold">404</h1>
-                    <h3>Page Not Found</h3>
-                    <p>The page you requested cound not be found</p>
-                    <Link className="btn btn-primary" to="/">HOME PAGE</Link>
-                </div>
-                {/* <FooterHome /> */}
+        <div className="pageNotFound">
+            <h1>404 Error Page </h1>
+            <p className="zoom-area"></p>
+            <section className="error-container">
+                <span>4</span>
+                <span>
+                    <span className="screen-reader-text">0</span>
+                </span>
+                <span>4</span>
+            </section>
+            <div className="link-container">
+                <NavLink to="/" className="more-link">
+                    Back To Home
+                </NavLink>
             </div>
         </div>
     )

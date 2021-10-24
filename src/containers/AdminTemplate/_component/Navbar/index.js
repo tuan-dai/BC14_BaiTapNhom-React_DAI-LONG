@@ -4,8 +4,7 @@ import '../../css/style.css'
 import '../../css/custom.css'
 import '../../css/main.css'
 import $ from 'jquery'
-import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
 
 import PersonIcon from '@mui/icons-material/Person';
 import MovieIcon from '@mui/icons-material/Movie';
@@ -44,10 +43,10 @@ class NavbarAdmin extends Component {
 
                     <ul className="nav flex-column mb-0">
                         <li className="nav-item mb-3">
-                            <Link to="/users/" className="nav-link text-light">
+                            <NavLink to="/users" className="nav-link text-light">
                                 <PersonIcon className="mr-3" />
                                 Users
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item mb-3">
                             <Link to="/films" className="nav-link text-light">
