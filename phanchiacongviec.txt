@@ -1,0 +1,19 @@
+===========TUAN DAI============
+- HomeTemplate:
+    + Home Page
+    + Trang Danh sach phim
+    + Navbar
+- AdminTemplate:
+    + Navbar
+    + Dashboard
+    + Dang nhap/Dang xuat
+    + Quan ly phim: Them, Edit, Search, Delete, Tao lich chieu
+
+===========LONG NGUYEN============
+- HomeTemplate:
+    + Detail-movie
+    + Trang dat ve
+    + Footer
+    + Page Not Found
+- AdminTemplate:
+    + Quan ly nguoi dung: Them, Edit, Search, Delete
