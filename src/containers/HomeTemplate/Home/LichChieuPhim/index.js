@@ -49,7 +49,7 @@ class LichChieuPhim extends Component {
                                                 <p>{cumRap.diaChi}</p>
                                                 <div className="d-flex">
                                                     {phim.lstLichChieuTheoPhim?.map((lichChieu, index) => {
-                                                        return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index}>
+                                                        return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index} style={{ textDecoration: 'none' }}>
                                                             {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
                                                         </NavLink>
                                                     })}

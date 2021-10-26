@@ -30,7 +30,7 @@ export default function Detail_Movie(props) {
         dispatch(get_DetailMovie(maPhim))
     }, [])
 
-    const ngayChieu = moment(data?.nngayKhoiChieu).format('DD.MM.YYYY')
+    const ngayChieu = moment(data?.ngayKhoiChieu).format('DD.MM.YYYY')
     console.log(data)
     return (
 
@@ -88,7 +88,7 @@ export default function Detail_Movie(props) {
                                                         <p>{cumRap.diaChi}</p>
                                                         <div className="d-flex">
                                                             {cumRap.lichChieuPhim?.map((lichChieu, index) => {
-                                                                return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index}>
+                                                                return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index} style={{textDecoration: 'none'}}>
                                                                     {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
                                                                 </NavLink>
                                                             })}
