@@ -1,9 +1,5 @@
 import React, { useEffect, Fragment, useState } from 'react'
-<<<<<<< HEAD
 import { Tabs } from 'antd';
-=======
-import { Tabs} from 'antd';
->>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
 import { useSelector, useDispatch } from 'react-redux';
 import { get_DetailMovie } from './modules/action';
 import { NavLink } from 'react-router-dom';
@@ -33,7 +29,7 @@ export default function Detail_Movie(props) {
         dispatch(get_DetailMovie(maPhim))
     }, [])
 
-    const ngayChieu = moment(data?.ngayKhoiChieu).format('DD.MM.YYYY')
+    const ngayChieu = moment(data?.nngayKhoiChieu).format('DD.MM.YYYY')
     console.log(data)
     return (
 
@@ -77,7 +73,7 @@ export default function Detail_Movie(props) {
                     {/* LICH CHIEU */}
 
                     <div className="mt-5 p-4 bg-light">
-                        <Tabs tabPosition={state.tabPosition}>
+                        <Tabs tabPosition='left'>
                             {data?.heThongRapChieu?.map((htr, index) => {
                                 return <TabPane tab={<img style={{ width: '5rem' }} src={htr.logo} alt="" />} key={index}>
 
@@ -91,11 +87,7 @@ export default function Detail_Movie(props) {
                                                         <p>{cumRap.diaChi}</p>
                                                         <div className="d-flex">
                                                             {cumRap.lichChieuPhim?.map((lichChieu, index) => {
-<<<<<<< HEAD
                                                                 return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index} style={{ textDecoration: 'none' }}>
-=======
-                                                                return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index} style={{textDecoration: 'none'}}>
->>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
                                                                     {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
                                                                 </NavLink>
                                                             })}

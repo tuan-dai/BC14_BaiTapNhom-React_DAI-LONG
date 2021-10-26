@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { renderAdminRoutes, renderHomeRoutes } from './routes'
 import PageNotFound from './containers/PageNotFound'
 import AuthPage from './containers/AdminTemplate/AuthPage';
-
 import SignUp from './containers/HomeTemplate/SignUp';
 
 function App() {

@@ -5,7 +5,7 @@ import "../css/main.css";
 import { NavLink, Link } from "react-router-dom";
 
 import { getListMovie, deleteMovie } from "../../HomeTemplate/Home/List Movie/modules/action";
-import Loading from '../../../component/Loader';
+
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
@@ -19,14 +19,9 @@ class QuanLyPhim extends Component {
     }
 
     renderTableListMovie = () => {
-<<<<<<< HEAD
         const { keyword } = this.props
-=======
-        const { keyword, loading } = this.props       
->>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
         const newData = this.props.data?.filter(item => item.maPhim.toString().indexOf(keyword) !== -1)
 
-        if (loading) return <Loading />;
         return newData?.map((item) => {
             return (
                 <tr key={item.maPhim}>
@@ -107,7 +102,6 @@ const mapDistpatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
     return {
         data: state.ListMovie_Reducer.data,
-        loading: state.ListMovie_Reducer.loading,
         error: state.ListMovie_Reducer.error,
         keyword: state.ListMovie_Reducer.keyword,
     }

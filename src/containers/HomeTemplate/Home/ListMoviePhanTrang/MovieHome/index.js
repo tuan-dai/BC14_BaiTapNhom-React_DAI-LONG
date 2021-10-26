@@ -8,11 +8,7 @@ export default function MovieHome(props) {
             <div className="card text-center border-0">
                 <NavLink to={`/detail-movie/${maPhim_HomePage}`} style={{ textDecoration: 'none' }}>
                     <img className="card-img-top" src={hinh_HomePage} alt="" />
-<<<<<<< HEAD
                     <p className="text-dark mt-2 font-weight-bold">{tenPhim_HomePage}</p>
-=======
-                    <p className="text-dark mt-2 font-weight-bold" >{tenPhim_HomePage}</p>
->>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
                 </NavLink>
 
             </div>

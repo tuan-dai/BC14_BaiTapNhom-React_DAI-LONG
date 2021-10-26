@@ -1,10 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { actLayTTLichChieuHeThongRap } from './modules/action';
-<<<<<<< HEAD
 import { Tabs } from 'antd';
-=======
-import { Tabs} from 'antd';
->>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import moment from 'moment';

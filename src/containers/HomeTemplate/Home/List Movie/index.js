@@ -17,8 +17,8 @@ class ListMovie extends Component {
     render() {
         return (
             <div className="container" style={{ marginTop: '3rem' }}>
-                <h4 className="text-left">PHIM SẮP CHIẾU</h4>
-                <div className="phimsapchieu_line"></div>
+                <h4 className="text-left">PHIM ĐANG CHIẾU</h4>
+                <div className="phimdangchieu_line"></div>
                 <div className="row my-5">
                     {this.renderListMovie()}
                 </div>

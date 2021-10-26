@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import Home from '../containers/HomeTemplate/Home/';
 import About from '../containers/HomeTemplate/About';
-=======
-import Home from '../containers/HomeTemplate/Home/'
-import About from '../containers/HomeTemplate/About'
->>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
 import HomeTemplate from '../containers/HomeTemplate';
 import AdminTemplate from "../containers/AdminTemplate";
 import AuthPage from "../containers/AdminTemplate/AuthPage";
