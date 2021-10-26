@@ -27,7 +27,7 @@ const EditFilm = (props) => {
     useEffect(() => {
         let { id } = props.match.params
         dispatch(layThongTinPhim(id))
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const formik = useFormik({
         enableReinitialize: true,

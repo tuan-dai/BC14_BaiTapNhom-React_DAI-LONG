@@ -39,7 +39,7 @@ export default function ShowTime(props) {
         catch (error) {
 
         }
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
     const convertHeThongRap = () => {
         return state.heThongRap?.map((htr) => {
             return { name: htr.tenHeThongRap, value: htr.maHeThongRap }

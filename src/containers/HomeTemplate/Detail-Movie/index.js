@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment, useState } from 'react'
+import React, { useEffect, Fragment } from 'react'
 import { Tabs } from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
 import { get_DetailMovie } from './modules/action';
@@ -13,12 +13,6 @@ import StarRateIcon from '@mui/icons-material/StarRate';
 
 const { TabPane } = Tabs;
 export default function Detail_Movie(props) {
-    const [state, setState] = useState({
-        tabPosition: 'left',
-    })
-    const changeTabPosition = (e) => {
-        setState({ tabPosition: e.target.value })
-    }
 
     const maPhim = props.match.params.id
 
@@ -27,7 +21,7 @@ export default function Detail_Movie(props) {
 
     useEffect(() => {
         dispatch(get_DetailMovie(maPhim))
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const ngayChieu = moment(data?.nngayKhoiChieu).format('DD.MM.YYYY')
     console.log(data)

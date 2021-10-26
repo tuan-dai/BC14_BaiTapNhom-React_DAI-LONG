@@ -21,7 +21,7 @@ export default function Slider() {
 
     useEffect(() => {
         dispatch(getArrayImg())
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const renderImg = () => {
         return arraryImg.map((item, index) => {

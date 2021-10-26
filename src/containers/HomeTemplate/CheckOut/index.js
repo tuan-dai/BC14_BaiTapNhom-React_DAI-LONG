@@ -18,7 +18,7 @@ export default function CheckOut(props) {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(layChiTietPhoneVe(id))
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const renderListSeat = () => {
         return danhSachGhe?.map((ghe, index) => {
