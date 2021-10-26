@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import FooterHome from '../HomeTemplate/_component/Footer'
+import { NavLink } from 'react-router-dom'
 import './style.css'
 
 export default function PageNotFound() {

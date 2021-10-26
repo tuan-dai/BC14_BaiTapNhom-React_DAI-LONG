@@ -1,4 +1,4 @@
-import GET_ARRAYIMG from './constant'
+import {GET_ARRAYIMG} from './constant'
 import api from '../../../../../utils/apiUtils'
 
 export const getArrayImg = () => {
@@ -15,7 +15,7 @@ export const getArrayImg = () => {
 
 const actSlider = (data) => {
     return {
-        type: 'GET_ARRAYIMG',
+        type: GET_ARRAYIMG,
         payload: data,
     }
 }

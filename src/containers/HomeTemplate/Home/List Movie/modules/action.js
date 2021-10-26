@@ -43,7 +43,7 @@ export const actSearchMovie = (keyword) => {
         payload: keyword,
     }
 }
-const actDeleteMovie = (movie) => {
+export const actDeleteMovie = (movie) => {
     return {
         type: ActionType.DELETE_MOVIE,
         payload: movie,

@@ -19,7 +19,7 @@ class QuanLyPhim extends Component {
     }
 
     renderTableListMovie = () => {
-        const { data, keyword } = this.props
+        const { keyword } = this.props
         const newData = this.props.data?.filter(item => item.maPhim.toString().indexOf(keyword) !== -1)
 
         return newData?.map((item) => {

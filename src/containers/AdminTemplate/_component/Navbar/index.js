@@ -8,7 +8,6 @@ import { Link, NavLink } from 'react-router-dom';
 
 import PersonIcon from '@mui/icons-material/Person';
 import MovieIcon from '@mui/icons-material/Movie';
-import GroupWorkIcon from '@mui/icons-material/GroupWork';
 import RoomIcon from '@mui/icons-material/Room';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -72,8 +71,8 @@ class NavbarAdmin extends Component {
                 {/* End vertical navbar */}
 
                 {/* Page content holder */}
-                <div class="page-content p-4" id="content">
-                    <button id="sidebarCollapse" type="button" class="btn btn-dark text-light shadow-sm px-2 mb-4">
+                <div className="page-content p-4" id="content">
+                    <button id="sidebarCollapse" type="button" className="btn btn-dark text-light shadow-sm px-2 mb-4">
                         <MenuIcon className="mr-1" />
                     </button>
                 </div>

@@ -53,35 +53,35 @@ export default function Content() {
                         </thead>
                         <tbody>
                             <tr>
-                                <td scope="row">1</td>
+                                <td>1</td>
                                 <td>John</td>
                                 <td>Snow</td>
                                 <td>35</td>
                                 <td>John Snow</td>
                             </tr>
                             <tr>
-                                <td scope="row">2</td>
+                                <td>2</td>
                                 <td>Cersei</td>
                                 <td>Lannister</td>
                                 <td>27</td>
                                 <td>Cersei Lannister</td>
                             </tr>
                             <tr>
-                                <td scope="row">3</td>
+                                <td>3</td>
                                 <td>Arya</td>
                                 <td>Stark</td>
                                 <td>31</td>
                                 <td>Arya Stark</td>
                             </tr>
                             <tr>
-                                <td scope="row">4</td>
+                                <td>4</td>
                                 <td>Daenerys</td>
                                 <td>Targaryen</td>
                                 <td>24</td>
                                 <td>Daenerys Targaryen</td>
                             </tr>
                             <tr>
-                                <td scope="row">5</td>
+                                <td>5</td>
                                 <td>David</td>
                                 <td>Bowie</td>
                                 <td>42</td>

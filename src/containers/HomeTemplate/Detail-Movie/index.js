@@ -1,5 +1,5 @@
 import React, { useEffect, Fragment, useState } from 'react'
-import { Tabs, Radio, Space } from 'antd';
+import { Tabs} from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
 import { get_DetailMovie } from './modules/action';
 import { NavLink } from 'react-router-dom';
@@ -74,7 +74,7 @@ export default function Detail_Movie(props) {
                     {/* LICH CHIEU */}
 
                     <div className="mt-5 p-4 bg-light">
-                        <Tabs tabPosition='left'>
+                        <Tabs tabPosition={state.tabPosition}>
                             {data?.heThongRapChieu?.map((htr, index) => {
                                 return <TabPane tab={<img style={{ width: '5rem' }} src={htr.logo} alt="" />} key={index}>
 

@@ -1,10 +1,8 @@
 import './App.css';
-import { BrowserRouter, Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { renderAdminRoutes, renderHomeRoutes } from './routes'
 import PageNotFound from './containers/PageNotFound'
 import AuthPage from './containers/AdminTemplate/AuthPage';
-import { createBrowserHistory } from 'history'
-
 
 function App() {
   return (

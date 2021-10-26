@@ -1,4 +1,4 @@
-import GET_ARRAYIMG from './constant'
+import {GET_ARRAYIMG} from './constant'
 
 const initialState = {
     arraryImg: [
@@ -12,7 +12,7 @@ const initialState = {
 
 const Slider_Reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'GET_ARRAYIMG': {
+        case GET_ARRAYIMG: {
             state.arraryImg = action.payload
             return { ...state }
         }

@@ -3,7 +3,6 @@ import './../css/style.css'
 
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 import Assignment from '@mui/icons-material/Assignment';
 import MessageIcon from '@mui/icons-material/Message';
 

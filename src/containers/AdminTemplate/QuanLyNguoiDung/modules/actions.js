@@ -4,7 +4,7 @@ import api from "../../../../utils/apiUtils";
 export const getListStaff = (user = "") => {
     return (dispatch) => {
         dispatch(actListStaffRequest());
-        if (user.trim() != "") {
+        if (user.trim() !== "") {
             return api
                 .get(`QuanLyNguoiDung/LayDanhSachNguoiDung?MaNhom=GP01&tuKhoa=${user}`)
                 .then((result) => dispatch(actListStaffSuccess(result.data.content)))

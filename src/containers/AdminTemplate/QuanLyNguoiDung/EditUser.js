@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Loading from "../../../component/Loader";
+// import Loading from "../../../component/Loader";
 import { editUser } from "./AddUser/modules/action";
 export default function EditUser() {
     const dispatch = useDispatch();
