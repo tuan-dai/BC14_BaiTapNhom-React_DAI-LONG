@@ -41,3 +41,22 @@
   color: #ffc107;
   text-decoration: none;
 }
+/* long */
+#login .container #sign-up-row #sign-up-column #sign-up-box {
+  margin-top: 50px !important;
+  max-width: 500px !important;
+  height: 100%;
+  box-shadow: 1px 1px 3px darkgrey;
+  background-color: white;
+}
+#login .container #sign-up-row #sign-up-column #sign-up-box #login-form {
+  padding: 30px;
+}
+#author {
+  font-size: 25px;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+/* long */

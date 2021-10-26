@@ -26,6 +26,7 @@ const AddUserReducer = (state = initialState, action) => {
       state.loading = false;
       state.userInfor = action.payload;
       state.error = null;
+      return { ...state };
     case ActionType.EDIT_USER:
       state.loading = false;
       state.data = action.payload;
