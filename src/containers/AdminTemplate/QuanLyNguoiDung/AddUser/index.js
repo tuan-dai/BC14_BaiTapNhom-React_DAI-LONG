@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addUser } from "./modules/action";
 
 export default function AddUser() {
@@ -26,8 +26,8 @@ export default function AddUser() {
         dispatch(addUser(state));
     };
     return (
-        <div className="container mt-5">
-            <form onSubmit={handleAddUser}>
+        <div>
+            <form className="container" onSubmit={handleAddUser}>
                 <h3>Add user</h3>
                 <div className="form-group">
                     <span>Tài khoản</span>
@@ -108,7 +108,7 @@ export default function AddUser() {
                 </div>
                 <div className="form-group">
                     <button type="submit" className="btn btn-success">
-                        ADD USER
+                        Add user
                     </button>
                 </div>
             </form>

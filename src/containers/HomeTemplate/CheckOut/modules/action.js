@@ -7,7 +7,7 @@ export const layChiTietPhoneVe = (maLichChieu) => {
             .get(`QuanLyDatVe/LayDanhSachPhongVe?MaLichChieu=${maLichChieu}`)
             .then((result) => {
                 dispatch({
-                    type: "GET_CHITIETPHONGVE",
+                    type: GET_CHITIETPHONGVE,
                     payload: result.data.content,
                 })
             })

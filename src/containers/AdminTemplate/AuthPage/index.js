@@ -53,7 +53,7 @@ export default function AuthPage(props) {
                                     <li>ĐĂNG NHẬP</li>
                                     <li className="mx-2">/</li>
                                     <li>
-                                        <NavLink className="register" to="#">ĐĂNG KÝ</NavLink>
+                                        <NavLink className="register" to="/sign-up">ĐĂNG KÝ</NavLink>
                                     </li>
                                 </ul>
 

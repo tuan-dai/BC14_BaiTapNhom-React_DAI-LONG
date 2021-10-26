@@ -1,4 +1,3 @@
-import { orange } from "@mui/material/colors";
 import React from "react";
 
 export default function About() {

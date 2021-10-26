@@ -1,4 +1,3 @@
-import { LegendToggleRounded } from "@mui/icons-material";
 import { GET_CHITIETPHONGVE, DATGHE } from "./constant";
 
 const initialState = {
@@ -15,7 +14,7 @@ const QuanLyDatVe_Reducer = (state = initialState, action) => {
         case DATGHE: {
             let newDanhSachGhe = [...state.danhSachGheDangDat]
             let index = newDanhSachGhe.findIndex(item => item.maGhe === action.payload.maGhe)
-            if (index != -1) {
+            if (index !== -1) {
                 newDanhSachGhe.splice(index, 1)
             } else {
                 newDanhSachGhe.push(action.payload)

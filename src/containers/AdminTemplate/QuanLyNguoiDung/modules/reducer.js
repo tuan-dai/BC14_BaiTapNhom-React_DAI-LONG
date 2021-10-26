@@ -26,11 +26,13 @@ const ListStaffReducer = (state = initialState, action) => {
         case ActionType.SEARCH_USER:
             state.keyword = action.payload;
             return { ...state };
-        case ActionType.DELETE_USER:
+        case ActionType.DELETE_USER: {
             state.loading = false;
             state.data = action.payload;
             state.error = null;
             return { ...state };
+        }
+
 
         default:
             return { ...state };

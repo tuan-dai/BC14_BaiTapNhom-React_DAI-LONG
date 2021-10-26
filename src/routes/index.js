@@ -1,6 +1,5 @@
-import { lazy } from "react";
-import Home from '../containers/HomeTemplate/Home/'
-import About from '../containers/HomeTemplate/About'
+import Home from '../containers/HomeTemplate/Home/';
+import About from '../containers/HomeTemplate/About';
 import HomeTemplate from '../containers/HomeTemplate';
 import AdminTemplate from "../containers/AdminTemplate";
 import AuthPage from "../containers/AdminTemplate/AuthPage";

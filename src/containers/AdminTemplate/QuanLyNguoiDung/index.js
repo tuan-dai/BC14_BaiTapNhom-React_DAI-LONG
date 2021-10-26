@@ -18,7 +18,7 @@ class QuanLyNguoiDung extends Component {
         if (loading) return <Loading />;
         return data?.map((staff) => {
             return (
-                <tr scope="row">
+                <tr>
                     <td>{staff.maLoaiNguoiDung}</td>
                     <td>{staff.taiKhoan}</td>
                     <td>{staff.matKhau}</td>

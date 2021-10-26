@@ -1,5 +1,5 @@
 import React, { useEffect, Fragment, useState } from 'react'
-import { Tabs, Radio, Space } from 'antd';
+import { Tabs } from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
 import { get_DetailMovie } from './modules/action';
 import { NavLink } from 'react-router-dom';
@@ -22,7 +22,6 @@ export default function Detail_Movie(props) {
 
     const maPhim = props.match.params.id
 
-    const loading = useSelector(state => state.DetailMovie_Reducer.loading)
     const data = useSelector(state => state.DetailMovie_Reducer.data)
     const dispatch = useDispatch()
 
@@ -88,7 +87,7 @@ export default function Detail_Movie(props) {
                                                         <p>{cumRap.diaChi}</p>
                                                         <div className="d-flex">
                                                             {cumRap.lichChieuPhim?.map((lichChieu, index) => {
-                                                                return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index}>
+                                                                return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index} style={{ textDecoration: 'none' }}>
                                                                     {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
                                                                 </NavLink>
                                                             })}

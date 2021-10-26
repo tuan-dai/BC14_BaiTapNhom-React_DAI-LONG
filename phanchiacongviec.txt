@@ -14,6 +14,7 @@
     + Detail-movie
     + Trang dat ve
     + Footer
+    + Form Dang Ky
     + Page Not Found
 - AdminTemplate:
     + Quan ly nguoi dung: Them, Edit, Search, Delete

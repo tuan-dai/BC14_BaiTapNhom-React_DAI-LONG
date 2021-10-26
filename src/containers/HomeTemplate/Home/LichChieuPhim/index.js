@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { actLayTTLichChieuHeThongRap } from './modules/action';
-import { Tabs, Radio, Space } from 'antd';
+import { Tabs } from 'antd';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import moment from 'moment';
@@ -24,13 +24,13 @@ class LichChieuPhim extends Component {
         return this.props.cumrap?.map((hethongRap, index) => {
             const { tabPosition } = this.state
             // load logo
-            return <TabPane tab={<img src={hethongRap.logo} className="rounded-circle" width='50' />} key={index}>
+            return <TabPane tab={<img src={hethongRap.logo} alt="" className="rounded-circle" width='50' />} key={index}>
                 <Tabs tabPosition={tabPosition}>
                     {/* load he thong rap */}
                     {hethongRap.lstCumRap?.map((cumRap, index) => {
                         return <TabPane tab={
                             <div className="d-flex">
-                                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png" width='50' height='50' />
+                                <img src="https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png" alt="" width='50' height='50' />
                                 <div className="text-danger text-left ml-3">
                                     {cumRap.tenCumRap}
                                     <p>[chi tiet]</p>
@@ -43,13 +43,13 @@ class LichChieuPhim extends Component {
                                 return <Fragment key={index}>
                                     <div className="mb-5">
                                         <div className="d-flex">
-                                            <img width={100} src={phim.hinhAnh} />
+                                            <img width={100} src={phim.hinhAnh} alt="" />
                                             <div className="ml-3">
                                                 <h5>{phim.tenPhim}</h5>
                                                 <p>{cumRap.diaChi}</p>
                                                 <div className="d-flex">
                                                     {phim.lstLichChieuTheoPhim?.map((lichChieu, index) => {
-                                                        return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index}>
+                                                        return <NavLink to={`/checkout/${lichChieu.maLichChieu}`} className="mr-2" key={index} style={{ textDecoration: 'none' }}>
                                                             {moment(lichChieu.ngayChieuGioChieu).format('hh:mm A')}
                                                         </NavLink>
                                                     })}

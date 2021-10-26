@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import AuthPageReducer from "../containers/AdminTemplate/AuthPage/modules/reducer";
+import SignUpReducer from "../containers/HomeTemplate/SignUp/module/reducer";
 import ListMoviePhanTrang_Reducer from "../containers/HomeTemplate/Home/ListMoviePhanTrang/modules/reducer";
 import ListMovie_Reducer from "../containers/HomeTemplate/Home/List Movie/modules/reducer";
 import Rap_Reducer from "../containers/HomeTemplate/Home/LichChieuPhim/modules/reducer";
@@ -12,6 +13,7 @@ import DetailMovie_Reducer from "../containers/HomeTemplate/Detail-Movie/modules
 
 const rootReducer = combineReducers({
     AuthPageReducer,
+    SignUpReducer,
     ListMoviePhanTrang_Reducer,
     ListMovie_Reducer,
     DetailMovie_Reducer,
