@@ -3,8 +3,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { renderAdminRoutes, renderHomeRoutes } from './routes'
 import PageNotFound from './containers/PageNotFound'
 import AuthPage from './containers/AdminTemplate/AuthPage';
+<<<<<<< HEAD
 import SignUp from './containers/HomeTemplate/SignUp';
 
+=======
+>>>>>>> cb53865a19db0d6c538f5bf1aa9a1f9a2a3bb30a
 
 function App() {
   return (
