@@ -4,9 +4,9 @@ export default function Footer() {
     return (
         <div>
             <footer className="text-white text-lg-start" style={{ backgroundColor: '#43464b' }}>
-                <div className="container-fluid p-4">
-                    <div className="row d-flex justify-content-around">
-                        <div className="col-lg-6 col-md-12 ">
+                <div className="container-fluid">
+                    <div className="row d-flex justify-content-around p-4">
+                        <div className="col-lg-6 col-md-12">
                             <h3 className="text-uppercase" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>LD Cinema</h3>
                             <p style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
                                 LD Cinema là một trong những công ty tư nhân đầu tiên về điện
@@ -39,10 +39,7 @@ export default function Footer() {
                     className="text-center p-3"
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
                 >
-                    © 2020 Copyright:
-                    <a style={{ color: 'rgba(255, 255, 255, 0.7)', textDecoration: 'none' }} href="https://mdbootstrap.com/">
-                        MDBootstrap.com
-                    </a>
+                    © 2021 Copyright: LD Cinema                
                 </div>
             </footer>
         </div>
