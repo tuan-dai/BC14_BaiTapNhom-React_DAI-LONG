@@ -28,17 +28,18 @@ export default function ShowTime(props) {
         cumRap: [],
     })
 
-    useEffect(async () => {
-        try {
-            let result = await api.get('QuanLyRap/LayThongTinHeThongRap')
-            setState({
-                ...state,
-                heThongRap: result.data.content
-            })
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                let result = await api.get('QuanLyRap/LayThongTinHeThongRap')
+                setState({
+                    ...state,
+                    heThongRap: result.data.content
+                })
+            }
+            catch (error) {console.log(error)}
         }
-        catch (error) {
-
-        }
+        fetchData()
     }, []) // eslint-disable-line react-hooks/exhaustive-deps
     const convertHeThongRap = () => {
         return state.heThongRap?.map((htr) => {
